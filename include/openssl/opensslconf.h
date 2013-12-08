@@ -74,9 +74,6 @@
 #ifndef OPENSSL_NO_STORE
 # define OPENSSL_NO_STORE
 #endif
-#ifndef OPENSSL_NO_WHIRLPOOL
-# define OPENSSL_NO_WHIRLPOOL
-#endif
 
 #endif /* OPENSSL_DOING_MAKEDEPEND */
 
@@ -160,9 +157,6 @@
 # endif
 # if defined(OPENSSL_NO_STORE) && !defined(NO_STORE)
 #  define NO_STORE
-# endif
-# if defined(OPENSSL_NO_WHIRLPOOL) && !defined(NO_WHIRLPOOL)
-#  define NO_WHIRLPOOL
 # endif
 #endif
 

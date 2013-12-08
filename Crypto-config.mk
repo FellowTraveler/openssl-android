@@ -473,6 +473,8 @@ common_src_files := \
   crypto/ui/ui_openssl.c \
   crypto/ui/ui_util.c \
   crypto/uid.c \
+  crypto/whrlpool/wp_block.c \
+  crypto/whrlpool/wp_dgst.c \
   crypto/x509/by_dir.c \
   crypto/x509/by_file.c \
   crypto/x509/x509_att.c \
@@ -636,6 +638,7 @@ x86_64_src_files := \
   crypto/sha/asm/sha1-x86_64.S \
   crypto/sha/asm/sha256-x86_64.S \
   crypto/sha/asm/sha512-x86_64.S \
+  crypto/whrlpool/wp-x86_64.S \
   crypto/x86_64cpuid.S \
 
 x86_64_exclude_files := \
