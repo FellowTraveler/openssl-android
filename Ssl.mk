@@ -36,7 +36,7 @@ endif
 LOCAL_SRC_FILES += $(target_src_files)
 LOCAL_CFLAGS += $(target_c_flags)
 LOCAL_C_INCLUDES += $(target_c_includes)
-LOCAL_SHARED_LIBRARIES += libcrypto $(log_shared_libraries)
+LOCAL_SHARED_LIBRARIES += libcryptoot $(log_shared_libraries)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE:= libssl
 LOCAL_ADDITIONAL_DEPENDENCIES := $(local_additional_dependencies)
@@ -49,7 +49,7 @@ include $(LOCAL_PATH)/android-config.mk
 LOCAL_SRC_FILES += $(host_src_files)
 LOCAL_CFLAGS += $(host_c_flags)
 LOCAL_C_INCLUDES += $(host_c_includes)
-LOCAL_SHARED_LIBRARIES += libcrypto-host $(log_shared_libraries)
+LOCAL_SHARED_LIBRARIES += libcryptoot-host $(log_shared_libraries)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE:= libssl-host
 LOCAL_ADDITIONAL_DEPENDENCIES := $(local_additional_dependencies)
@@ -61,7 +61,7 @@ include $(CLEAR_VARS)
 include $(LOCAL_PATH)/android-config.mk
 LOCAL_SRC_FILES:= ssl/ssltest.c
 LOCAL_C_INCLUDES += $(host_c_includes)
-LOCAL_SHARED_LIBRARIES := libssl libcrypto $(log_shared_libraries)
+LOCAL_SHARED_LIBRARIES := libssl libcryptoot $(log_shared_libraries)
 LOCAL_MODULE:= ssltest
 LOCAL_MODULE_TAGS := optional
 LOCAL_ADDITIONAL_DEPENDENCIES := $(local_additional_dependencies)
